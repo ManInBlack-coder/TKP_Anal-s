@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<!--METAANDMED-->
+<html lang="et" id="html">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/Kasutatud_allikad.css">
+        <!--BACK nupu link-->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <!--Fondi lingid-->
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@700&family=Playfair+Display:wght@400;600&family=Quicksand:wght@300&family=Roboto:ital,wght@1,100&display=swap" rel="stylesheet">
+
+    </head>
+
+
+<!------------------------------------------------------------------->
+<!-- Lisan veebilehe päise -->
+
+<body id="home">
+
+    <!--<header>-->
+    
+        
+    
+<nav id="navbar">
+   
+
+
+   
+   <div class="center_parent">
+
+        <div><h2><a href="/Index.html" id="tkp">TKP analüüs</a></h2></div>
+    </div>
+
+    <ul class="nupud_class" >
+
+        <li><a href="Autorist.html">Autorist</a></li>
+        <li><a id="joon_all" href="Kasutatud_allikad.html">Kasutatud allikad</a></li>
+        <li><a href="Kontakt.html">Kontakt</a></li>
+
+    </ul> 
+</nav>
+    
+    <!--</header>-->
+
+<!------------------------------------------------------------------->
+<!--
+    Väike back nupu osa
+--> 
+
+<div>
+    <a id="back-link"><span class="material-symbols-outlined">
+        arrow_left_alt
+        </span></a>
+</div>
+
+    
+<!------------------------------------------------------------------->
+
+
+<!--
+
+    SIIA TULEB VIDEOTE SEKTSIOON
+-->
+
+<!--PEALKIRI DIV-->
+<div id="pealkiri_div">
+    <h1 id="kasutatud_allikad_tiitel">Videod, mis räägivad lähemalt kasutatud allikate kohta</h1>
+</div>
+
+
+<!--POHI DIV -->
+<div id="main_div">
+    
+    <div id="main_div_child">
+
+
+        <!--ESIMENE ALAM DIV-->
+        <div id="alam_div_1">
+            <!--Esimene video -->
+            <div>
+                <h3>Daniel Goldman - Sotsiaalne intelligentsus</h3>
+                <iframe width="680" height="305" src="https://www.youtube.com/embed/vgtXptNfx8Q?si=vgyXJXpanExsM1sR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+
+
+            <!--Teine video-->
+            <div>
+                <h3>Robin Dreeke - Kuidas lugeda inimesi</h3>
+                <iframe  width="680" height="305"  src="https://www.youtube.com/embed/em3p62O-DHQ?si=wujMbvK9qqdK7DDS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+
+        </div>
+
+        <!--TEINE ALAM DIV-->
+        <div id="alam_div_2">
+
+            <!--Kolmas video-->
+            <div>
+                <h3>Joe Navarro - What every body is saying</h3>
+                <iframe width="680" height="305" src="https://www.youtube.com/embed/Is7tMSLKfh8?si=zcYmoMoSa5mSfYYf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+
+            
+
+        </div>
+    </div>
+</div>
+
+<!------------------------------------------------------------------->
+
+
+<!-- Lisan Avalehe footeri, kus on lehe arendaja andmed -->
+
+<div class="footer">
+    
+    <p>TKP analüüs | Kopli 3 C | +372 5346 4867</p>
+    
+</div>
+
+
+<script>
+
+    var header = document.getElementById('navbar')
+    var sticky = header.offsetTop
+    
+    const stickyHeader = () => {
+        
+        if (window.pageYOffset > sticky) {
+            header.classList.add('sticky')
+
+        } else {
+            header.classList.remove("sticky")
+        }
+    }
+
+    window.onscroll = () => stickyHeader()
+</script>
+
+<script>
+    var element = document.getElementById('back-link');
+
+    element.setAttribute('href', document.referrer);
+
+    element.onclick = function() {
+      history.back();
+      return false;
+    }
+</script>
+
+</body>
+
+    
+</html>

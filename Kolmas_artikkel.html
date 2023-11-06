@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+    <!--Metaandmed-->
+    <html lang="et" id="html">
+        <head>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="stylesheet" href="css/Kolmas_artikkel.css">
+            <!--BACK nupu link-->
+            <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
+            <!--Fondi lingid-->
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@700&family=Playfair+Display:wght@400;600&family=Quicksand:wght@300&family=Roboto:ital,wght@1,100&display=swap" rel="stylesheet">
+
+        </head>
+
+<!------------------------------------------------------------------->
+<!-- Veebilehe päis-->
+<body id="home">
+
+    <!--<header>-->
+
+	
+
+        <nav id="navbar">
+
+
+            <div class="center_parent">
+       
+                 <div><h2><a href="/Index.html" id="tkp">TKP analüüs</a></h2></div>
+             </div>
+     
+             <ul class="nupud_class" >
+     
+                 <li><a href="Autorist.html">Autorist</a></li>
+                 <li><a href="Kasutatud_allikad.html">Kasutatud allikad</a></li>
+                 <li><a href="Kontakt.html">Kontakt</a></li>
+     
+             </ul> 
+         </nav>
+
+
+<!------------------------------------------------------------------->
+
+
+<!--
+    ARTIKLI SEKTSIOON
+-->
+
+<!--POLE VAJA MUJALE LISADA-->
+
+
+
+    
+<!--Sektsiooni dib-->
+<div id="sektsiooni_div">
+   
+    <!--Väike back nupu osa--> 
+    <div>
+        <a id="back-link"><span class="material-symbols-outlined">
+        arrow_left_alt
+            </span></a>
+    </div>
+
+    <!--ARTIKLI TIITEl-->
+    <div id="artikkel_parent">
+        <h2 id="artikkel_child">Keerulised ülemused</h2>
+        <hr id="alakriips">
+    </div>
+    
+    
+    <!--Sisu div-->
+    <div id="sisu">
+        <!--Pilt-->
+        <div id="pilt">
+            
+        </div>
+
+        <!--Text-->
+        <div id="tekst">
+            
+            
+            <br>
+            <br>
+            <p>Me kõik oleme kogenud seda ebameeldivust, kui meie ülemused või "bossid" väljendavad rahulolematust mingitel ebaratsionaalsetel põhjustel. Või siis on ka ülemusi, kes teostavad oma sooritusi väga ebakindlalt, kuna kardavad riske võtta.
+            </p>
+            <br>
+            <p>Siin kohal tahaksin rõhuda inimese kehakeele järgmisele. Kuna meie ülemused on tavaliselt ettevõttes oma töötajatest hiearhiliselt üle ning mõned teisiti öeldult "keerulised ülemused" võivad pahatahtlikult oma positsiooni ära kasutada, võiks väiksema astmega inimene teha oma otsuseid ratsionaalsemalt suheldes nendega.</p>
+            <br>
+            <p>Joe Navarro oli 25 aastase staažiga endine FBI agent, kes pea terve oma karjääri vältel uuris inimeste kehakeelt ja mitte-verbaalseid limbilise aju tekitatud kehareaktsioonide tagamaid. Tema raamatus "What every body is saying" on välja toodud kehakeele märke, mille abil võime paremini lugeda, kas inimene on ebakindel või pahur meie peale.  </p>
+            <br>
+            <p>
+                Siin on erinevad märgid, millest võib olla kasu, kui tahate aimu saada, kas teie ülemus on pahur või ei taha teiega nõustuda.
+            
+            </p>
+            <br>
+
+            
+            <hr>
+            <h2>Kolm märki sellest, kui inimene on teie peale pahur</h3>
+            <br>
+            <h3>* Näppude või käega silmade hõõrumine näitab kindlat ebausu või tagasilükkamise märki.</h3>
+            <h3>* Kui isik suunab vestluse käigus ühe jalgadest eemale teisest või väljapääsu poole, annab ta mõista tahet sinu kohese lahkumise osas (võib juhtuda, kui ülemus suunab sind ukse poole ja tahab, et sa lahkuksid).</h3>
+            <h3>* Kui isik järsult ristab oma käed vestluse käigus, väljendab see jutu käigus tekkinud ebamugavust (Kuid tuleb teha vahet kas ta nägu on ka samal ajal rahuloletu, kuna osa inimesi tavaliselt ristavad käed ka siis, kui kuulavad kedagi või kui nad ei pruugi ennast ebamugavalt üldse tunda).</h3>
+            
+           
+        
+        
+        </div>
+
+
+    </div>
+
+   
+
+
+</div>
+
+
+<!------------------------------------------------------------------->
+
+<!-- Lisan Avalehe footeri, kus on lehe arendaja andmed -->
+
+<div class="footer">
+    
+    <p>TKP analüüs | Kopli 3 C | +372 5346 4867</p>
+    
+</div>
+
+
+<script>
+
+    var header = document.getElementById('navbar')
+    var sticky = header.offsetTop
+    
+    const stickyHeader = () => {
+        
+        if (window.pageYOffset > sticky) {
+            header.classList.add('sticky')
+
+        } else {
+            header.classList.remove("sticky")
+        }
+    }
+
+    window.onscroll = () => stickyHeader()
+</script>
+
+<script>
+    var element = document.getElementById('back-link');
+
+    element.setAttribute('href', document.referrer);
+
+    element.onclick = function() {
+      history.back();
+      return false;
+    }
+</script>
+
+</body>
+
+</html>
+

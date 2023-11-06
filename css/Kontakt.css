@@ -1,0 +1,295 @@
+/*Panin lehe taustapildi*/
+#html {
+    
+    background-color: rgb(222, 222, 222);
+    background-image: url("/img/Taust.png");
+    background-blend-mode: multiply;
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: contain;
+    background-attachment: fixed;
+    background-size: 60%;
+}
+
+
+/* Üld body*/
+/***************************/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;    
+}
+
+
+
+body {
+   
+    font-family: 'Playfair Display', serif;
+    font-family: 'PT Serif', serif;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 200px;
+    
+    line-height: 1.4;
+    
+   
+}
+
+#tkp {
+    color:#fff
+}
+
+a {
+    text-decoration: none;
+}
+  
+/***************************/
+/*Menüü riba*/
+#navbar {
+    background: #1986b5;
+    color: #fff;
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    font-size: 20px;
+    
+}
+
+
+/* MENU BUTTONS*/
+.nupud_class {
+    list-style: none;
+    display: flex;
+    align-items:center;
+    position: relative;
+    justify-content: right;
+    float:right
+}
+
+
+
+.nupud_class li a {
+    color:#fff;
+    padding: 0.75rem;
+    margin: 0 0.25;
+
+
+}
+
+/***************************/
+
+/*Tagasi nupu ikoon*/
+.material-symbols-outlined {
+    margin: 20px;
+    color: black;
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24
+  }
+
+
+.material-symbols-outlined:hover {
+    margin: 20px;
+    color: #33333374;
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24
+  }
+/***************************/
+
+/*TOMBAB MENUURIBAL LEHE LINGILE JOONE ALLA, kui minna sinna*/
+#joon_all {
+    background:#10323f36;
+    border-radius: 5px;
+}
+
+.nupud_class li a:hover {
+    background: #10323f36;
+    border-radius: 5px;
+}
+
+
+/***************************/
+
+/*
+KONTAKTI VORMI SEKTSIOON
+*/
+
+/*POLE VAJA KIRJUTADA MUJALE*/
+
+/*TIITLI PARENT*/
+#pealkiri_div {
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:30px;
+    position: relative;
+    min-height:100px;
+    margin: 20px;
+    margin-top: -30px;
+}
+
+/*TIITLI CHILD*/
+#kontakt_tiitel_child {
+    justify-content: center;
+    width: flex;
+    display: inline-block;
+    padding: 15px;
+   
+    border: 3px solid black;
+    color: #fff;
+    background-color: #1986b567;  
+   
+    
+    position: relative;
+    top:initial;
+    text-align: center;
+    box-shadow: 4px 4px 7px gray;
+}
+
+/*Main_div (SUUR KONTEINER, kuhu kogu kraam sisse laheb)*/
+#main_div {
+    size: 50%;
+    width: 65%;
+    width:fit-content;
+    position: center;
+    display: flow;
+    border: 4px solid black;
+    margin: auto;
+    padding-bottom:35px;
+   
+    background-color: #ffffffed;
+    box-shadow: 4px 4px 7px gray;
+}
+
+
+
+
+/*Vasakpoolne konteiner*/
+#kontakti_konteiner {
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:80px;
+    position: relative;
+    margin: 40px;
+    font-size: 30px;
+}
+
+/*KONTAKTI VORM*/
+
+.form_kast {
+    padding: 20px;
+}
+
+.row {
+    margin-bottom: 20px;
+    
+}
+
+
+
+.required {
+    color: #333;
+}
+
+.input {
+    font-size: 20px;
+    min-height: 50px;
+}
+/*SUBMIT NUPP*/
+.submit_button {
+    position: relative;
+    border: none;
+    font-size: 20px;
+    /*color: #FFFFFF;*/
+    padding: 10px;
+    width: 200px;
+    text-align: center;
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+    background-color: #1986b567;  
+    box-shadow: 4px 4px 7px gray;
+
+}
+
+
+
+.button::after {
+    content: "";
+    display: block;
+    position: absolute;
+    padding-top:300%;
+    padding-left: 350%;
+    margin-left: -20px !important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: 0s;
+}
+.button:active:after {
+    padding:0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s;
+}
+
+.submit_button:hover {
+    background-color: #1986b5;  
+    box-shadow: 4px 4px 7px gray;
+    color: #fff;
+}
+
+
+
+/*IKOON*/
+#ikoon_div {
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:80px;
+    position: relative;
+    margin: 40px;
+    height: auto;
+    width: auto;
+    
+}
+
+/*Telefoni ikoon*/
+
+.telefon {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+
+/***************************/
+
+/*____________________________________*/
+
+/*FOOTER*/
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 11px;
+}
+
+.sticky{
+    position: fixed;
+    top: 0;
+    width: 100%;
+}

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<!--Metaandmed-->
+<html lang="et" id="html">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!--Fondi lingid-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@700&family=Playfair+Display:wght@400;600&family=Quicksand:wght@300&family=Roboto:ital,wght@1,100&display=swap" rel="stylesheet">
+
+</head>
+
+<!------------------------------------------------------------------->
+<!-- Lisan veebilehe päise -->
+<body id="home">
+	
+		<!--<header>-->
+		
+			
+		
+    <nav id="navbar">
+       
+ 
+    
+       
+       <div class="center_parent">
+  
+            <div><h2><a href="/Index.html" id="tkp">TKP analüüs</a></h2></div>
+        </div>
+
+        <ul class="nupud_class" >
+
+            <li><a href="Autorist.html">Autorist</a></li>
+            <li><a href="Kasutatud_allikad.html">Kasutatud allikad</a></li>
+            <li><a href="Kontakt.html">Kontakt</a></li>
+
+        </ul> 
+    </nav>
+        
+        <!--</header>-->
+	
+		
+	
+
+<!------------------------------------------------------------------->
+<!--  Lisan artiklid lehele, HREF-idena -->
+
+<section id="sektsioon">
+
+    <div id="sektsiooni_div">
+            <div id="kastide_pealkiri_parent">
+                <h2 id="kastide_pealkiri_child" >Saa teada oma töökeskkonnas toimuvast <hr></h2>
+
+
+
+            </div>
+
+            <div class="artikli_kastid">
+
+            
+
+                    <a href="Esimene_artikkel.html" id="Artikli_väliskulg_1">
+                    
+                        <h2>Tervislikud suhted töökeskkonnas</h2>
+
+                        <article href="Teine_artikkel.html">
+
+                            <div class="wrapper">
+                            
+                                <div class="text-box">
+                                
+                                    <p class="juhtkiri">Selleks, et suudaksime hoida oma töökeskkonnas häid suhteid, tuleb...</p>
+                                
+                                </div>
+                            </div>
+                        </article>
+
+                    </a>
+
+
+                    <a href="Teine_artikkel.html" id="Artikli_väliskulg_2" >
+
+                        <h2>Enda ümber oleva käitumise märkamine ja teadvustamine</h2>
+                        <article href="Teine_artikkel.html">
+
+                           <div class="wrapper">
+
+                            <div class="text-box">
+                            
+                                <p class="juhtkiri">Daniel Goldman'i raamatus "Sotsiaalne intelligentsus"
+                                    on kirjutatud...
+                                </p>
+
+                            </div>
+                           </div>
+                        </article>
+                    </a>
+
+
+                    <a href="Kolmas_artikkel.html" id="Artikli_väliskulg_3">
+
+                        <h2>Keerulised ülemused</h2>
+                        <article href="Kolmas_artikkel.html">
+
+                           <div class="wrapper">
+                        
+                            <div class="text-box">
+                            
+                                <p class="juhtkiri">Me kõik oleme kogenud seda ebameeldivust, kui...</p>
+
+                            </div>
+                           </div>
+                        </article>
+                    </a>
+            </div>
+
+
+
+
+
+    <!------------------------------------------------------------------->
+
+    <!-- Lisan põhi lehe artikli, mis räägib lehe eesmärgist -->
+
+
+
+
+            <div class="artikli_kastid_pohi">
+                <a class="Artikli_valiskulg_pohi_artikkel">
+                    <article>
+
+                        <div class="wrapper_pohi_artikkel">
+
+
+                        
+
+
+                                <h2>Meie missiooniks on...</h2>
+                                <hr id="pea_artikkel_pealkirijoon">
+                                <p class="avalehe-artikli-tekst">Meie missiooniks on aidata era sektoris olevatel
+                                     töötajatel teadvustada endale oma töökohas toimuvast käitumisest. 
+                                    </p>
+                                <br>
+                                <p class="avalehe-artikli-tekst">Anname juhiseid, et töötaja oskaks paremini analüüsida kaastöötajate koostöö valmidust ja ratsionaalsemalt inimestega kommunikeeruda.</p>
+                                
+                                
+                        </div>
+                    
+                    </article>
+                </a>
+            </div>
+    </div>
+        
+</section>
+
+
+
+
+<!------------------------------------------------------------------->
+<!-- Lisan Avalehe footeri, kus on lehe arendaja andmed -->
+
+<div class="footer">
+    
+    <p>TKP analüüs | Kopli 3 C | +372 5346 4867</p>
+    
+</div>
+
+
+<script>
+
+    var header = document.getElementById('navba r')
+    var sticky = header.offsetTop
+    
+    const stickyHeader = () => {
+        
+        if (window.pageYOffset > sticky) {
+            header.classList.add('sticky')
+
+        } else {
+            header.classList.remove("sticky")
+        }
+    }
+
+    window.onscroll = () => stickyHeader()
+</script>
+
+
+</body>
+
+
+
+</html>

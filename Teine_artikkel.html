@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+    <!--Metaandmed-->
+    <html lang="et" id="html">
+        <head>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="stylesheet" href="css/Teine_artikkel.css">
+            <!--BACK nupu link-->
+            <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
+            <!--Fondi lingid-->
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@700&family=Playfair+Display:wght@400;600&family=Quicksand:wght@300&family=Roboto:ital,wght@1,100&display=swap" rel="stylesheet">
+
+        </head>
+
+<!------------------------------------------------------------------->
+<!-- Veebilehe päis-->
+<body id="home">
+
+    <!--<header>-->
+
+	
+
+        <nav id="navbar">
+
+
+            <div class="center_parent">
+       
+                 <div><h2><a href="/Index.html" id="tkp">TKP analüüs</a></h2></div>
+             </div>
+     
+             <ul class="nupud_class" >
+     
+                 <li><a href="Autorist.html">Autorist</a></li>
+                 <li><a href="Kasutatud_allikad.html">Kasutatud allikad</a></li>
+                 <li><a href="Kontakt.html">Kontakt</a></li>
+     
+             </ul> 
+         </nav>
+
+
+<!------------------------------------------------------------------->
+
+<!------------------------------------------------------------------->
+
+<!--
+    ARTIKLI SEKTSIOON
+-->
+
+<!--POLE VAJA MUJALE LISADA-->
+
+
+
+    
+<!--Sektsiooni dib-->
+<div id="sektsiooni_div">
+   
+    <!--Väike back nupu osa--> 
+    <div>
+        <a id="back-link"><span class="material-symbols-outlined">
+        arrow_left_alt
+            </span></a>
+    </div>
+
+    <!--ARTIKLI TIITEl-->
+    <div id="artikkel_parent">
+        <h2 id="artikkel_child">Enda ümber oleva käitumise märkamine ja teadvustamine</h2>
+        <hr id="alakriips">
+    </div>
+    
+    
+    <!--Sisu div-->
+    <div id="sisu">
+        <!--Pilt-->
+        <div id="pilt">
+            
+        </div>
+
+        <!--Text-->
+        <div id="tekst">
+            
+            
+            <br>
+            <br>
+            <p>Kuidas küll me enamasti reageerime sellele, kui keegi väljendab meie vastu viha? Ikka enamasti tunnen ise ka mingit moodi selle inimese viha? Küll aga kuidas?
+            </p>
+            <br>
+            <p>Daniel Goldman'i raamatus "Sotsiaalne intelligentsus" on kirjutatud neuronite peegeldamisest. Mida täpselt neuronite peegeldamine tähendama peaks lihtsamas keeles?
+                Peegelneuron on meie peas neuroniliik, mis privatiseerib, kui inimene märkab kellegi teise käitumist teadlikult. Selle neuroni ergastumise ajal inimene tajub teise isiku väljendatavat tunnet tema vastu. 
+            </p>
+            <br>
+            <p>Miks ma hakkasin rääkima mingit neuroloogia juttu, kui kogu mõte keerleb tööinimeste suhete paremaks muutmise ümber? 
+                Väga raske seda seletada õnneks pole. Teise isiku käitumise arusaadavus aitab meil paremini saada aimu tema järgmistest kavatsustest. 
+                Nagu Robin Dreeke oma raamatus "Kuidas lugeda inimesi" on öelnud, et usaldusväärsuse märkidega inimeste käitumist on lihtsam ette prognoosida ja selle põhjal otsustada, kas temaga on mõtet usalds- või koostööliitu luua.
+
+            </p>
+            <br>
+            <p></p>
+
+        </div>
+
+
+    </div>
+
+   
+
+
+</div>
+
+
+
+
+<!------------------------------------------------------------------->
+
+<!-- Lisan Avalehe footeri, kus on lehe arendaja andmed -->
+
+<div class="footer">
+    
+    <p>TKP analüüs | Kopli 3 C | +372 5346 4867</p>
+    
+</div>
+
+
+<script>
+
+    var header = document.getElementById('navbar')
+    var sticky = header.offsetTop
+    
+    const stickyHeader = () => {
+        
+        if (window.pageYOffset > sticky) {
+            header.classList.add('sticky')
+
+        } else {
+            header.classList.remove("sticky")
+        }
+    }
+
+    window.onscroll = () => stickyHeader()
+</script>
+
+<script>
+    var element = document.getElementById('back-link');
+
+    element.setAttribute('href', document.referrer);
+
+    element.onclick = function() {
+      history.back();
+      return false;
+    }
+</script>
+
+
+</body>
+
+</html>
+
